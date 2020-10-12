@@ -1,0 +1,80 @@
+<div>
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img id="toast-icon" src="" class="icon-toast mr-2"></img>
+      <strong class="mr-auto" id="toast-title"></strong>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+    </div>
+  </div>
+  <div class="d-none" id="inside">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Tr-Actions</a>
+      </li>>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="balance-tab" data-toggle="tab" href="#balance" 
+          role="tab" aria-controls="balance" aria-selected="true"
+        >
+          Balance
+        </a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="history-tab" data-toggle="tab" href="#history" 
+          role="tab" aria-controls="history" aria-selected="true"
+        >
+          History
+        </a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="commit-tab" data-toggle="tab" href="#commit" 
+          role="tab" aria-controls="commit" aria-selected="false"
+        >
+          Commit
+        </a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="logout" href="#" aria-selected="false">Log Out</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="balance" role="tabpanel" aria-labelledby="balance-tab">
+        <%- include('balance') -%>
+      </div>
+      <div class="tab-pane fade show active" id="history" role="tabpanel" aria-labelledby="history-tab">
+        <%- include('history') -%>
+      </div>
+      <div class="tab-pane fade" id="commit" role="tabpanel" aria-labelledby="commit-tab">
+        <%- include('history') -%>            
+      </div>
+    </div>
+  </div>
+  <div id="outside">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 m-auto">
+          <div class="card">
+            <div class="card-header">Log In to use the system</div>
+            <div class="card-body">
+              <form class="needs-validation" id="loginForm" novalidate>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="nameHelp" required min="3">
+                  <div class="invalid-feedback">
+                    Please enter a name
+                  </div>
+                  <small id="nameHelp" class="form-text text-muted">We'll need your name for doing transactions.</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>  
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>

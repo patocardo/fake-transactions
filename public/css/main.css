@@ -1,0 +1,100 @@
+.large-icon {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+.medium-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+.text-wrap-n {
+  white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+  white-space: -pre-wrap; /* Opera 4 - 6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+  word-wrap: break-word; /* IE 5.5+ */
+}
+
+.strikethrough-tr td {
+  text-decoration: line-through;
+}
+
+.cell-link {
+  color: #000099;
+  text-decoration: underline;
+}
+
+.icon-toast {
+  height: auto;
+  width: 2rem;
+}
+
+/* Pendiente */
+.note-status-style-0 {
+  background-color: #ff9;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* sin comunicar */
+.note-status-style-1,
+.note-status-style-2 {
+  background-color: #fa6;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* anulado */
+.note-status-style-3 {
+  background-color: #fff;
+  color: #999;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+/* Resuelto y comunicado */
+.note-status-style-4 {
+  background-color: #3d6;
+  color: #000;
+  font-weight: normal;
+  text-decoration: none;
+}
+/* Rechazado y comunicado */
+.note-status-style-5 {
+  background-color: #f66;
+  color: #000;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* textos largos */
+.boxed-text {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+/* cartel de área de texto */
+.limited-text + .maxlength-feedback { 
+  display: block;
+  text-align: right;
+  width: auto; 
+}
+
+.info-circle {
+  border: 3px solid #4e73df;
+  border-radius: 17px;
+  color: #4e73df;
+  line-height: 30px;
+  position: relative;
+  text-align: center;
+  width: 36px;
+}
+
+.image-show {
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.image-show--shrinked {
+  max-height: 300px;
+}

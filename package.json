@@ -1,0 +1,33 @@
+{
+  "name": "mi_ciudad",
+  "version": "1.0.0",
+  "description": "Mi Ciudad - Municipio de los Vecinos.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=dev nodemon server.js",
+    "test": "NODE_ENV=test nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.3",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.15.6",
+    "express-validation": "^3.0.5",
+    "fs-extra": "^9.0.0",
+    "jshint": "^2.11.0",
+    "request": "^2.88.2",
+    "striptags": "^3.1.1",
+    "web-push": "^3.4.4",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23",
+    "xmldom": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
